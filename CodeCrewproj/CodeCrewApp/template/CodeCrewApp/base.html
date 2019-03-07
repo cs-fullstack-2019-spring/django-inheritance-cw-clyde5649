@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CodeCrewApp/css/codeCrewApp.css' %}">
+
+</head>
+<body>
+
+<nav>
+    <a href="{% url 'home' %}">HOME</a>
+    <a href="{% url 'aboutus' %}">About US</a>
+    <a href="{% url 'contactus' %}">contact us</a>
+    <a href="{% url 'gallery' %}">gallery</a>
+    <a href="{% url 'resources' %}">resources</a>
+</nav>
+
+{% block content %}
+<p> give us a call</p>
+{% end block %}
+
+</body>
+</html>
